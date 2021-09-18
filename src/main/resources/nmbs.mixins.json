@@ -4,9 +4,8 @@
   "package": "org.oakbricks.nmbs.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-  ],
-  "client": [
-    "EvokerEntityMixin"
+    "EvokerEntityMixin",
+    "WololoGoalMixin"
   ],
   "injectors": {
     "defaultRequire": 1

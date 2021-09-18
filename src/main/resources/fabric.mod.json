@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "nmbs",
   "version": "${version}",
-
+  "accessWidener": "nmbs.accesswidener",
   "name": "No More Bleeding Sheep!",
   "description": "\"No More Bleeding Sheep\" is a single-mixin mod that prevents the Evoker from turning blue sheep into red sheep!",
   "authors": [

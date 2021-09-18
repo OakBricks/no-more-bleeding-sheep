@@ -1,0 +1,4 @@
+accessWidener    v1    named
+accessible    class    net/minecraft/entity/mob/SpellcastingIllagerEntity$Spell
+accessible    class    net/minecraft/entity/mob/EvokerEntity$LookAtTargetOrWololoTarget
+accessible    method    net/minecraft/entity/mob/EvokerEntity    getWololoTarget    ()Lnet/minecraft/entity/passive/SheepEntity;
