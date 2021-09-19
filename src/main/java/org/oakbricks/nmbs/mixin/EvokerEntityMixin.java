@@ -19,7 +19,7 @@ public class EvokerEntityMixin {
 	}
 
 	@Overwrite
-	public @Nullable SheepEntity getWololoTarget() {
+	public final @Nullable SheepEntity getWololoTarget() {
 		return null;
 	}
 }
