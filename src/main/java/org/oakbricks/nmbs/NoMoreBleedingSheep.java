@@ -34,8 +34,9 @@ public class NoMoreBleedingSheep implements ModInitializer {
 			e.printStackTrace();
 			configLines = List.of("NULL", "NULL");
 		}
-		LOGGER.info(configLines);
-		configLines.set(1, "tele jigsaw");
-		LOGGER.info(configLines);
+		// reminder for me that index of 0 is first and 1 is second and so on...
+//		LOGGER.info(configLines);
+//		configLines.set(1, "tele jigsaw");
+//		LOGGER.info(configLines);
 	}
 }

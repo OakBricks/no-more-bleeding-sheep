@@ -14,6 +14,7 @@ public class EvokerEntityMixin {
 	@Inject(at = @At("HEAD"), method = "canStart()Z", cancellable = true)
 	public void canStart(CallbackInfoReturnable<Boolean> cir) {
 		if (CONFIG.getOrDefault("disableWololoGoal", true)) {
+			cir.setReturnValue(false);
 			cir.cancel();
 		}
 	}
