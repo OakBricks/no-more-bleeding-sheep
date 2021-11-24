@@ -1,7 +1,6 @@
 package org.oakbricks.nmbs.mixin;
 
 import net.minecraft.entity.mob.EvokerEntity;
-import org.oakbricks.nmbs.NoMoreBleedingSheep;
 import org.oakbricks.nmbs.SimpleConfig;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
