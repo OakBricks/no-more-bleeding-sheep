@@ -10,12 +10,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(EvokerEntity.WololoGoal.class)
 public class EvokerEntityMixin {
-	public SimpleConfig CONFIG = new NoMoreBleedingSheep().CONFIG;
+	public boolean DISABLE_WOLOLO_GOAL = SimpleConfig.of("no-more-bleeding-sheep").request().getOrDefault("disableWololoGoalFromStarting", true);
 	@Inject(at = @At("HEAD"), method = "canStart()Z", cancellable = true)
 	public void canStart(CallbackInfoReturnable<Boolean> cir) {
-		if (CONFIG.getOrDefault("disableWololoGoal", true)) {
+		if (DISABLE_WOLOLO_GOAL) {
 			cir.setReturnValue(false);
-			cir.cancel();
 		}
 	}
 }

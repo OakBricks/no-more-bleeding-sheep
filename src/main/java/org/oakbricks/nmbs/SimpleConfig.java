@@ -55,7 +55,7 @@ public class SimpleConfig {
         private final String filename;
         private DefaultConfig provider;
 
-        private ConfigRequest(File file, String filename ) {
+        public ConfigRequest(File file, String filename) {
             this.file = file;
             this.filename = filename;
             this.provider = DefaultConfig::empty;
@@ -133,7 +133,7 @@ public class SimpleConfig {
         }
     }
 
-    private SimpleConfig( ConfigRequest request ) {
+    public SimpleConfig(ConfigRequest request) {
         this.request = request;
         String identifier = "Config '" + request.filename + "'";
 
